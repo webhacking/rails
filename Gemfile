@@ -65,8 +65,8 @@ group :cable do
 
   gem 'faye-websocket', require: false
 
-  gem 'blade', '~> 0.5.1'
-  gem 'blade-sauce_labs_plugin', '~> 0.5.1'
+  gem 'blade', github: 'javan/blade'
+  gem 'blade-sauce_labs_plugin', github: 'javan/blade-sauce_labs_plugin'
 end
 
 # Add your own local bundler stuff.

@@ -22,6 +22,32 @@ GIT
       delayed_job (>= 3.0, < 5)
 
 GIT
+  remote: git://github.com/javan/blade-sauce_labs_plugin.git
+  revision: 2fd119f86ca64dd3e64982996940dd89f111566a
+  specs:
+    blade-sauce_labs_plugin (0.5.1)
+      childprocess
+      faraday
+      selenium-webdriver
+
+GIT
+  remote: git://github.com/javan/blade.git
+  revision: 62c8cb0ad70f66852356adbe0513da8e44a55e66
+  specs:
+    blade (0.5.1)
+      activesupport (>= 3.0.0)
+      blade-qunit_adapter (~> 1.20.0)
+      coffee-script (~> 2.4.0)
+      coffee-script-source (~> 1.10.0)
+      curses (~> 1.0.0)
+      eventmachine (~> 1.0.0)
+      faye (~> 1.1.1)
+      sprockets (~> 3.6.0)
+      thin (~> 1.6.0)
+      thor (~> 0.19.1)
+      useragent (~> 0.16.7)
+
+GIT
   remote: git://github.com/rails/coffee-rails.git
   revision: aa2e623cbda4f3c789a0a15d1f707239e68f5736
   specs:
@@ -114,23 +140,7 @@ GEM
     bcrypt (3.1.11)
     beaneater (1.0.0)
     benchmark-ips (2.6.1)
-    blade (0.5.1)
-      activesupport (>= 3.0.0)
-      blade-qunit_adapter (~> 1.20.0)
-      coffee-script (~> 2.4.0)
-      coffee-script-source (~> 1.10.0)
-      curses (~> 1.0.0)
-      eventmachine (~> 1.2.0)
-      faye (~> 1.1.1)
-      sprockets (~> 3.6.0)
-      thin (~> 1.6.0)
-      thor (~> 0.19.1)
-      useragent (~> 0.16.7)
     blade-qunit_adapter (1.20.0)
-    blade-sauce_labs_plugin (0.5.1)
-      childprocess
-      faraday
-      selenium-webdriver
     builder (3.2.2)
     bunny (2.2.2)
       amq-protocol (>= 2.0.1)
@@ -160,7 +170,7 @@ GEM
     em-socksify (0.3.1)
       eventmachine (>= 1.0.0.beta.4)
     erubis (2.7.0)
-    eventmachine (1.2.0.1)
+    eventmachine (1.0.9.1)
     execjs (2.6.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
@@ -325,8 +335,8 @@ DEPENDENCIES
   backburner
   bcrypt (~> 3.1.11)
   benchmark-ips
-  blade (~> 0.5.1)
-  blade-sauce_labs_plugin (~> 0.5.1)
+  blade!
+  blade-sauce_labs_plugin!
   byebug
   coffee-rails!
   dalli (>= 2.2.1)
